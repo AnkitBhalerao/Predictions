@@ -140,7 +140,7 @@ txt2 = pdf_text("https://goo.gl/wUXvjk")
 
 head(txt2)
 
-pat = "([0-9]{4} [M\\.|Mme|Mlle]{1}.*?, [né|née]{1}.*?)\\."
+pat = "([0-9]{4} [M\\.|Mme|Mlle]{1}.*?, [nÃ©|nÃ©e]{1}.*?)\\."
 data = unlist(gsubfn::strapply(txt2, pattern = pat))
 
 head(data)
